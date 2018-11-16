@@ -31,10 +31,13 @@ class App extends Component {
           onChange={this.handleChange}
           placeholder="Enter Url"
         />
+        <br />
         {!res ? (
           "Please Enter URL to Generate QR Code"
         ) : (
-          <img src={res} alt="..." />
+          <div>
+            <img src={res} alt="..." />
+          </div>
         )}
       </div>
     );
